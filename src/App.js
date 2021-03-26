@@ -1,11 +1,12 @@
 import './App.css';
-import cocinero from "./img/cocinero.png";
+import {AppRouter} from './router/AppRouter';
+import {Navbar} from './components/ui/Navbar';
 
 function App() {
   return (
     <div >
-     
-      <img src = {cocinero} alt = "lico lico"/>
+      <Navbar/>
+      {AppRouter}
     </div>
   );
 }
