@@ -1,24 +1,49 @@
-import React from 'react';
-import { Route, Router, Switch } from 'react-router-dom';
-import {Beach} from '../components/view/Beach';
-import {City} from '../components/view/City';
-import {Me} from '../components/view/Me';
-import {Mountain} from '../components/view/Mountain';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
+import { Me } from "../components/view/Me";
+import { Beach } from "../components/view/Beach";
+import { City } from "../components/view/City";
+import { Mountain } from "../components/view/Mountain";
+import {Navbar} from '../components/ui/Navbar';
 
+export const AppRouter = () =>{
+  return (
+    <Router>
+      <div>
+        <Navbar/>
 
-export const AppRouter = () => {
-    return (
-        <div>
+        <hr />
 
-            <Router>
-                <Switch>
-                    <Route path="/" component = {Me}/>
-                    <Route path="/beach" component = {Beach}/>
-                    <Route path="/mountain" component = {Mountain}/>
-                    <Route path="/city" component = {City}/>
-                </Switch>
-            </Router>
-        </div>
-    )
+        {/*
+          A <Switch> looks through all its children <Route>
+          elements and renders the first one whose path
+          matches the current URL. Use a <Switch> any time
+          you have multiple routes, but you want only one
+          of them to render at a time
+        */}
+        <Switch>
+          <Route exact path="/">
+            <Me />
+          </Route>
+          <Route path="/Mountain">
+            <Mountain />
+          </Route>
+          <Route path="/Beach">
+            <Beach />
+          </Route>
+          <Route path="/City">
+            <City />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
 }
+
+
+
