@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { Display } from '../cta/Display';
 
 export const Me = () => {
     return (
         <div>
-            <h1>Hi! Welcome to my life!</h1>
+            <Display/>
         </div>
     )
 }

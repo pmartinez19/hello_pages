@@ -10,6 +10,7 @@ import { Beach } from "../components/view/Beach";
 import { City } from "../components/view/City";
 import { Mountain } from "../components/view/Mountain";
 import {Navbar} from '../components/ui/Navbar';
+import {Footer} from '../components/view/Footer';
 
 export const AppRouter = () =>{
   return (
@@ -40,6 +41,7 @@ export const AppRouter = () =>{
             <City />
           </Route>
         </Switch>
+        <Footer/>
       </div>
     </Router>
   );
