@@ -9,11 +9,13 @@ export const Display = () => {
                         <div className="flex flex-wrap items-center pb-12">
                             <div className="md:w-1/2 lg:w-2/3 w-full xl:pr-20 md:pr-6">
                                 <div className="py-2 text-color">
-                                    <h1 className="text-2xl lg:text-6xl md:leading-snug tracking-tighter f-f-l font-black">Hola Bienvenido! </h1>
-                                    <h2 className="text-lg lg:text-3xl lg:leading-7 md:leading-10 f-f-r py-4 md:py-8">Here at Globex we take special care of what your organization needs instead of selling you a mass market tool that takes a one size fits all approach. I personally review each and every client business and oversee the team that tailores a solution</h2>
+                                    <h1 className="text-2xl lg:text-6xl md:leading-snug tracking-tighter f-f-l font-black">Hi welcome! </h1>
+                                    <h2 className="text-lg lg:text-3xl lg:leading-9 md:leading-10 f-f-r py-4 md:py-8">
+                                        This web app it´s a small demo made with React and Tailwind CSS. It is intended to be an introductory portfolio to my skills as a frontend programmer. If you want to know more of Tailwind CSS click the link below.
+                                    </h2>
                                     
                                     <div className="flex items-center cursor-pointer pb-4 md:pb-0">
-                                        <Link to = '/beach' className="f-f-r text-lg lg:text-2xl font-semibold underline text-indigo-700" >Lets Get Started</Link>
+                                        <a href= 'https://tailwindcss.com/docs/guides/create-react-app' target = "_blank" className="f-f-r text-lg lg:text-2xl font-semibold underline text-indigo-700" >I want to know more!</a>
                                         
                                     </div>
                                 </div>
@@ -59,6 +61,7 @@ export const Display = () => {
                         </div>
                     </div>
                 </div>
+                
                 <div className="pb-32 pt-16">
                     <div className="mx-auto">
                         <div className="flex flex-wrap flex-row-reverse items-center">
