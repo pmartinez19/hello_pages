@@ -1,7 +1,6 @@
 import React from 'react';
-import { Display } from '../cta/Display';
 
-export const Me = () => {
+export default function Galery() {
     return (
         <div>
             

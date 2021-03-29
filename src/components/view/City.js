@@ -8,7 +8,7 @@ import {
 import foto1 from "../img/IMG_1022.JPG";
 export const City = () => {
     return (
-        <div> {
+        <div className="z-0"> {
             DisplayRigth({
                 title: "I am Amsterdam!",
                 text: "Look this impresive city known as Amsterdam. We stayed for four days in our route for Europe three years ago.",

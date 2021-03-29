@@ -5,11 +5,10 @@ import {
   Route
 } from "react-router-dom";
 
-import { Me } from "../components/view/Me";
+import { Presentation } from "../components/view/Presentation";
 import { Beach } from "../components/view/Beach";
 import { City } from "../components/view/City";
 import { Mountain } from "../components/view/Mountain";
-import {Navbar} from '../components/ui/Navbar';
 import {Footer} from '../components/view/Footer';
 import {Navbar2} from "../components/ui/Navbar2";
 
@@ -17,21 +16,11 @@ export const AppRouter = () =>{
   return (
     <Router>
       <div>
-        <Navbar/>
-        {Navbar2}
+        <Navbar2/>
 
-        <hr />
-
-        {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
         <Switch>
           <Route exact path="/">
-            <Me />
+            <Presentation />
           </Route>
           <Route path="/Mountain">
             <Mountain />
