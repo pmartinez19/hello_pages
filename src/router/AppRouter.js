@@ -11,12 +11,14 @@ import { City } from "../components/view/City";
 import { Mountain } from "../components/view/Mountain";
 import {Navbar} from '../components/ui/Navbar';
 import {Footer} from '../components/view/Footer';
+import {Navbar2} from "../components/ui/Navbar2";
 
 export const AppRouter = () =>{
   return (
     <Router>
       <div>
         <Navbar/>
+        {Navbar2}
 
         <hr />
 
