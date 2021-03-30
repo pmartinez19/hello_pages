@@ -31,22 +31,22 @@ export const Navbar2 = () => {
             
         </div>
         <div class="navbar-menu hidden lg:order-1 lg:block w-full lg:w-2/5">
-            <Link class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" to ="/">
+            <Link class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" to ="/hello_pages">
                 Presentation
             </Link>
-            <Link class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" to ="/journey">
+            <Link class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" to ="/hello_pages/journey">
                 Journey
             </Link>
-            <Link class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" to = "/Galery">
+            <Link class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" to = "/hello_pages/Galery">
                 Galery
             </Link>
         </div>
         <div class="navbar-menu hidden lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
             
-            <Link class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" to ="/FAQS">
+            <Link class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" to ="/hello_pages/FAQS">
                 FAQ
             </Link>
-            <Link class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" to = "/Contact">
+            <Link class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" to = "/hello_pages/Contact">
                 Contact
             </Link>
         </div>
@@ -65,9 +65,9 @@ const DropDown = (prop) =>{
         
     >
         <div class="py-1" role="none">
-            <Link to = "/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            <Link to = "/hello_pages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                 role="menuitem">Presentation</Link>
-            <Link to = "/Journey" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            <Link to = "/hello_pages/Journey" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
             role="menuitem">Journey</Link>
             
         </div>
@@ -78,9 +78,9 @@ const DropDown = (prop) =>{
                 role="menuitem">Move</a>
         </div>
         <div class="py-1" role="none">
-            <Link to = "/FAQS" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            <Link to = "/hello_pages/FAQS" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                 role="menuitem">FAQS</Link>
-            <Link to = "/Contact" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            <Link to = "/hello_pages/Contact" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                 role="menuitem">Contact</Link>
         </div>
 

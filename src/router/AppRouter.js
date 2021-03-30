@@ -2,7 +2,8 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 
 import { Presentation } from "../components/view/Presentation";
@@ -17,35 +18,37 @@ import {FAQS} from "../components/view/FAQS";
 import { Contact } from "../components/view/Contact";
 
 export const AppRouter = () =>{
+  
   return (
       <div>
     <Router>
         <Navbar2/>
         <Switch>
-          <Route exact path="/" >
+          <Route exact path="/hello_pages" >
             <Presentation />
           </Route>
-          <Route path="/Journey">
+          <Route path="/hello_pages/Journey">
             <Journey />
           </Route>
-          <Route path="/Galery">
+          <Route path="/hello_pages/Galery">
             <Galery />
           </Route>
-          <Route path="/Beach">
+          <Route path="/hello_pages/Beach">
             <Beach />
           </Route>
-          <Route path="/Mountain">
+          <Route path="/hello_pages/Mountain">
             <Mountain />
           </Route>
-          <Route path="/City">
+          <Route path="/hello_pages/City">
             <City />
           </Route>
-          <Route path="/FAQS">
+          <Route path="/hello_pages/FAQS">
             <FAQS />
           </Route>
-          <Route path="/Contact">
+          <Route path="/hello_pages/Contact">
             <Contact />
           </Route>
+          
         </Switch>
     </Router>
         <Footer />
