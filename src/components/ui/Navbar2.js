@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
 import { Link, Router } from 'react-router-dom';
+import { Presentation } from '../view/Presentation';
 
 
 export const Navbar2 = () => {
     const [state, setState] = useState(false);
-    const [ref, setRef] = useState(false)
+    const [ref, setRef] = useState(true);
     const handleDrop = () =>{
         setState(!state);
-        if(state){
-            window.addEventListener('click', () => setRef(true));
-        }
-        else{
-            setRef(false);
-        }
+        
     }
     
     return (
@@ -32,6 +28,7 @@ export const Navbar2 = () => {
                 </svg>
             </button>
             {DropDown(state)}
+            
         </div>
         <div class="navbar-menu hidden lg:order-1 lg:block w-full lg:w-2/5">
             <Link class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" to ="/">
@@ -40,20 +37,18 @@ export const Navbar2 = () => {
             <Link class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" to ="/journey">
                 Journey
             </Link>
-            <a class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" href="#">
+            <Link class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" to = "/Galery">
                 Galery
-            </a>
+            </Link>
         </div>
         <div class="navbar-menu hidden lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
-            <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="#">
-                Content
-            </a>
-            <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="#">
+            
+            <Link class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" to ="/FAQS">
                 FAQ
-            </a>
-            <a class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" href="#">
+            </Link>
+            <Link class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" to = "/Contact">
                 Contact
-            </a>
+            </Link>
         </div>
     </nav>
     </>
@@ -62,36 +57,36 @@ export const Navbar2 = () => {
 
 
 const DropDown = (prop) =>{
-
+    
     if (prop ){
 
         return (
-    <div class="z-20 origin-top-right fixed right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none translate-x-5" role="menu" name = "menu" aria-orientation="vertical" aria-labelledby="options-menu" v-show= "isActive">
+    <div class="z-20 origin-top-right fixed right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none translate-x-5" role="menu" name = "menu" aria-orientation="vertical" aria-labelledby="options-menu"
+        
+    >
         <div class="py-1" role="none">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                role="menuitem">Edit</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                role="menuitem">Duplicate</a>
+            <Link to = "/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem">Presentation</Link>
+            <Link to = "/Journey" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            role="menuitem">Journey</Link>
+            
         </div>
         <div class="py-1" role="none">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                role="menuitem">Archive</a>
+            <Link to= "/Galery" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem">Galery</Link>
             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                 role="menuitem">Move</a>
         </div>
         <div class="py-1" role="none">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                role="menuitem">Share</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                role="menuitem">Add to favorites</a>
+            <Link to = "/FAQS" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem">FAQS</Link>
+            <Link to = "/Contact" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem">Contact</Link>
         </div>
-        <div class="py-1" role="none">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                role="menuitem">Delete</a>
-        </div>
+
+        
     </div>
     )}
-    else{
-        return ("");
-    }
+   
+   
 }
