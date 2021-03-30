@@ -33,7 +33,7 @@ export const Presentation = () => {
             Welcome to this humble presentation. 
         </p>
         <p className="text-gray-400 w-1/3  inline-block font-light">
-            Welcome to this humble presentation. 
+            I like science and new technologies. I graduated in chemistry from the UAB and I have a master's degree in nanoscience and nanotechnology.
         </p>
         
     </div>

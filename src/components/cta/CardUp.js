@@ -14,7 +14,7 @@ export default function CardUp(card) {
         {isShown &&(
             
             
-                <div className="z-50 absolute w-10/12 bg-white rounded overflow-hidden shadow-lg .-y-50 right-11 left-10 top-40 inset-0"
+                <div className="z-50 absolute w-10/12 h-auto bg-white rounded overflow-hidden shadow-lg -y-30 right-11 left-10 top-auto inset-0"
                 onMouseEnter={() => setIsShown(true)} >
                     
                     <div class="px-6 py-4">
@@ -27,7 +27,7 @@ export default function CardUp(card) {
                             
                         </p>
                     </div>
-                    <div class=" px-6 pt-4 pb-2">
+                    <div class=" px-6 pt-1 pb-1">
                         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{card.tag1}</span>
                         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{card.tag2}</span>
                         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{card.tag3}</span>

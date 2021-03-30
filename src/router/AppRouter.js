@@ -13,9 +13,9 @@ import { Mountain } from "../components/view/Mountain";
 import {Footer} from '../components/view/Footer';
 import {Navbar2} from "../components/ui/Navbar2";
 import { Journey } from "../components/view/Journey";
-import Galery from "../components/view/Galery";
+
 import {FAQS} from "../components/view/FAQS";
-import { Contact } from "../components/view/Contact";
+
 
 export const AppRouter = () =>{
   
@@ -30,9 +30,7 @@ export const AppRouter = () =>{
           <Route path="/hello_pages/Journey">
             <Journey />
           </Route>
-          <Route path="/hello_pages/Galery">
-            <Galery />
-          </Route>
+          
           <Route path="/hello_pages/Beach">
             <Beach />
           </Route>
@@ -45,10 +43,7 @@ export const AppRouter = () =>{
           <Route path="/hello_pages/FAQS">
             <FAQS />
           </Route>
-          <Route path="/hello_pages/Contact">
-            <Contact />
-          </Route>
-          
+          <Redirect to = "/hello_pages"/>
         </Switch>
     </Router>
         <Footer />

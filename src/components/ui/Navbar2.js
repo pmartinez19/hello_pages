@@ -15,7 +15,7 @@ export const Navbar2 = () => {
     <>
         <nav class="flex bg-white flex-wrap items-center justify-between p-4">
         <div class="lg:order-2 w-auto lg:w-1/5 lg:text-center">
-            <Link to="/" class="text-xl text-gray-800 font-semibold font-heading" >
+            <Link to="/hello_pages" class="text-xl text-gray-800 font-semibold font-heading" >
                 Pedro Martínez
             </Link>
         </div>
@@ -37,18 +37,14 @@ export const Navbar2 = () => {
             <Link class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" to ="/hello_pages/journey">
                 Journey
             </Link>
-            <Link class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" to = "/hello_pages/Galery">
-                Galery
-            </Link>
+            
         </div>
         <div class="navbar-menu hidden lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
             
             <Link class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" to ="/hello_pages/FAQS">
                 FAQ
             </Link>
-            <Link class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" to = "/hello_pages/Contact">
-                Contact
-            </Link>
+            
         </div>
     </nav>
     </>
@@ -71,17 +67,10 @@ const DropDown = (prop) =>{
             role="menuitem">Journey</Link>
             
         </div>
-        <div class="py-1" role="none">
-            <Link to= "/Galery" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                role="menuitem">Galery</Link>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                role="menuitem">Move</a>
-        </div>
+        
         <div class="py-1" role="none">
             <Link to = "/hello_pages/FAQS" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                 role="menuitem">FAQS</Link>
-            <Link to = "/hello_pages/Contact" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                role="menuitem">Contact</Link>
         </div>
 
         
